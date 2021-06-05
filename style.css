@@ -1,0 +1,76 @@
+:root{
+    --cyan: hsl(185, 75%, 39%);
+    --darkblue: hsl(229, 23%, 23%);
+    --grayishblue: hsl(227, 10%, 46%);
+    --darkgray: hsl(0, 0%, 59%);
+    --primaryfontsize: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.container{
+
+}
+.card{
+width: 50vh;
+height: 55vh;
+margin: 10% auto;
+border: 1px solid var(--darkgray);
+border-radius: 15px;
+position: relative;
+}
+.background{
+position: relative;
+z-index: 0;
+top: 0;
+left: 0;
+width: 100%;
+height: 37.5%;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+background-image: url(images/bg-pattern-card.svg);
+}
+.photo{
+width: 12.5vmin;
+height: 12.5vmin;
+border: 5px solid white;
+border-radius: 50%;
+background-image: url(images/image-victor.jpg);
+background-position: center;
+background-size: contain;
+position: absolute;
+top: 26.5%;
+left: 37.5%;
+z-index: 1;
+}
+.details{
+    width: 100%;
+    height: 37.5%;
+    border-bottom: .5px solid var(--grayishblue);
+    font-size: var(--primaryfontsize);
+}
+.details-name{
+    font-weight: 700;
+    
+}
+.details-age{
+    color: var(--grayishblue);
+}
+.details-city{
+    color: var(--grayishblue);
+}
+.stats{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.stats-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.stats-number{
+    font-weight: 700;
+}
+.stats-description{
+    color: var(--grayishblue);
+}
