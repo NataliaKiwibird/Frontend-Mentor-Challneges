@@ -8,7 +8,8 @@ body{
     min-height: -webkit-fill-available;
     width: 100%;
     margin: 0;
-    font-size: 15px;
+    padding: 0;
+    font-size: 93.75%;
     color: white;
     background-color: hsl(233, 47%, 7%);
     font-family: 'Inter', sans-serif;
@@ -16,9 +17,8 @@ body{
 main{
     max-width: 1200px;
     width: fit-content;
-    margin: 20vh auto;
     height: min-content;
-    justify-self: center;
+    margin: 10rem auto;
     border-radius: 15px;
     overflow: hidden;
     background-color: hsl(244, 38%, 16%);
@@ -27,9 +27,7 @@ main{
 .stats-preview{
     padding: 5rem;
     padding-bottom: unset;
-}
-.stats-preview__info{
-
+    flex-shrink: 1;
 }
 .stats-preview__info--header{
     font-size: 2.45rem;
@@ -74,11 +72,12 @@ main{
 .stats-photo{
     margin: 0;
     position: relative;
-    z-index: 0;
+    flex-shrink: 2;
 }
 .stats-photo__desktop{
     height: 100%;
     object-fit: cover;
+    flex-shrink: 2;
 }
 .stats-photo__mobile{
     display: none;
@@ -90,7 +89,8 @@ main{
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: hsla(277, 64%, 61%, .6);
+    background-color: hsla(277, 64%, 61%, .7);
+    mix-blend-mode: multiply;
     z-index: 1;
 }
 .stats-photo__caption{
@@ -99,7 +99,7 @@ main{
 footer{
 opacity: .5;
 font-size: .7rem;
-position: fixed;
+position: absolute;
 bottom: 1rem;
 left: 2rem;
 }
@@ -109,10 +109,10 @@ footer a{
 }
 
 
-@media(max-width: 1200px){
+@media(max-width: 1250px){
     main{
         max-width: 900px;
-        margin: 16vh auto;
+        margin: 7rem auto;
     }
     .stats-preview{
         padding: 3rem;
@@ -127,7 +127,10 @@ footer a{
         width: unset;
     }
 }
-@media(max-width: 800px){
+@media(max-width: 900px){
+    body{
+        padding: auto;
+    }
     main{
         flex-direction: column-reverse;
         width: 90vw;
@@ -146,14 +149,17 @@ footer a{
         margin-bottom: 2rem;
     }
     .stats-photo{
-        
+        height: min-content;
     }
     .stats-photo__desktop{
         display: none;
     }
     .stats-photo__mobile{
         display: unset;
-        object-fit: contain;
+        object-fit: cover;
+        padding: 0;
+        margin: 0;
+        height: 100%;
         width: 100%;
     }
     .stats-preview__statisitcs{
@@ -162,7 +168,7 @@ footer a{
         padding: unset;
     }
     .stats-preview__statisitcs li {
-        padding-bottom: 2rem;
+        padding-bottom: 2.5rem;
     }
     footer{
         position: inherit;
