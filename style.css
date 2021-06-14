@@ -79,9 +79,6 @@ main{
     object-fit: cover;
     flex-shrink: 2;
 }
-.stats-photo__mobile{
-    display: none;
-}
 .stats-photo::after{
     content: "";
     position: absolute;
@@ -115,7 +112,7 @@ footer a{
         margin: 7rem auto;
     }
     .stats-preview{
-        padding: 3rem;
+        padding: 5rem;
     }
     .stats-preview__info--header{
         font-size: 2rem;
@@ -125,6 +122,9 @@ footer a{
     }
     .stats-preview__statisitcs{
         width: unset;
+    }
+    .stats-photo{
+        max-width: 50%;
     }
 }
 @media(max-width: 900px){
@@ -149,17 +149,10 @@ footer a{
         margin-bottom: 2rem;
     }
     .stats-photo{
-        height: min-content;
+        max-width: unset;
     }
     .stats-photo__desktop{
-        display: none;
-    }
-    .stats-photo__mobile{
-        display: unset;
         object-fit: cover;
-        padding: 0;
-        margin: 0;
-        height: 100%;
         width: 100%;
     }
     .stats-preview__statisitcs{
@@ -171,7 +164,7 @@ footer a{
         padding-bottom: 2.5rem;
     }
     footer{
-        position: inherit;
         text-align: center;
+        position: inherit;
     }
 }
