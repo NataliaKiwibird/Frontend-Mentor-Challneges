@@ -134,6 +134,7 @@ footer a{
 @media(max-width: 750px){
     main{
         grid-template-columns: repeat(1, 1fr);
+        margin: 0;
     }
     .section-join{
         padding: 2rem 1.75rem 3rem 1.75rem;
