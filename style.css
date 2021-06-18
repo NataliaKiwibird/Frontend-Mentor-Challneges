@@ -37,18 +37,17 @@ body{
     content: '';
     width: 100vw;
     height: 100vh;
-    background-size: auto;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
 .wrapper::before{
     top: 5%;
-    left: 5%;
+    left: 0%;
     background: url("images/bg-pattern-top.svg") no-repeat bottom right;
 }
 .wrapper::after{
     top: 95%;
-    left: 95%;
+    left: 100%;
     background: url("images/bg-pattern-bottom.svg") no-repeat top left;
 }
 main{
@@ -112,7 +111,7 @@ main{
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem 3.5rem;
-    border-top: 1px solid var(--darkgray);
+    border-top: 1px solid hsla(0, 0%, 59%, .3);
 }
 .stats__block{
     display: flex;
