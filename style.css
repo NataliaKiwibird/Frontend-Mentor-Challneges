@@ -1,8 +1,10 @@
-/* The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px */
-
+*, *::before, *::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 :root{
     --primary: hsl(0, 36%, 70%);
     --secondary: hsl(0, 93%, 68%);
@@ -11,4 +13,91 @@
     --gradient2: linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cyan);
+    overflow: hidden;
+
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.card{
+
+}
+.logo{
+
+}
+.logo__img{
+    padding: 3rem;
+    width: 16rem;
+}
+.photo{
+    
+}
+.photo__img{
+    
+}
+.info{
+    padding: 5rem 3rem 1.5rem 3rem;
+}
+.info__caption{
+    text-align: center;
+}
+.info__caption--header{
+    font-size: 4.5rem;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+.info__caption--header span{
+    color: var(--primary);
+    font-weight: 300;
+}
+.info__caption--paragraph{
+    font-size: 1.5rem;
+    line-height: 1.75;
+    color: var(--primary);
+    padding: 2.5rem 0;
+}
+.info__form{
+    border: 1px solid var(--primary);
+    border-radius: 3rem;
+    overflow: hidden;
+}
+.info__form--input{
+    
+}
+.info__form--alert{
+    
+}
+.info__form--button{
+    height: 100%;
+    width: 25%;
+    border: none;
+    border-radius: 30px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+}
+.info__form--button-arrow{
+    
+}
+footer{
+    text-align: center;
+}
+.attribution a{
+    color: var(--primary);
 }
