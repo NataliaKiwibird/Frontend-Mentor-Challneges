@@ -23,3 +23,8 @@ function validEmail () {
         alert.style.display = 'unset';
     }
 }
+
+button.addEventListener ('click', (event) => {
+    event.preventDefault();
+    validEmail();
+})
