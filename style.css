@@ -146,7 +146,7 @@ footer{
         padding: 3.5rem 15rem 1.5rem 15rem;
     }
 }
-@media(min-width: 900px){
+@media(min-width: 830px){
     .wrapper{
         position: relative;
     }
@@ -212,7 +212,7 @@ footer{
         left: 1rem;
     }
 }
-@media(min-width: 1025px){
+@media(min-width: 1150px){
     .logo{
         margin: 5rem 0 0 0;
         padding-left: 12rem;
