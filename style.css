@@ -24,7 +24,6 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--cyan);
-    overflow: hidden;
 }
 .wrapper{
     display: flex;
@@ -33,7 +32,6 @@ body{
     min-height: 100vh;
     height: 100vh;
     position: relative;
-    overflow: hidden;
 }
 .card{
     margin-bottom: auto;
