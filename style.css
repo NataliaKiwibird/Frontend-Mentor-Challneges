@@ -29,12 +29,12 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 100vh;
-    height: 100vh;
     position: relative;
 }
 .card{
     margin-bottom: auto;
+    min-height: 100vh;
+    height: 100vh;
 }
 .logo__img{
     padding: 3rem;
@@ -224,6 +224,6 @@ footer{
         padding-left: 17rem;
     }
     .info{
-        padding: 0 25rem 1.5rem 20rem;
+        padding: 0 30rem 1.5rem 20rem;
     }
 }
