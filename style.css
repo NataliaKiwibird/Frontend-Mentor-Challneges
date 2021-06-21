@@ -100,6 +100,8 @@ background-color: white;
 border: none;
 padding: 0;
 justify-self: flex-end;
+transform: rotate(0deg);
+transition: transform .2s;
 }
 .accordion__list--button img{
 width: 1.2rem;
@@ -111,6 +113,16 @@ line-height: 1.75;
 color: var(--text-grayish);
 display: none;
 }
+/* JS effects */
+.accordion__list--answer-active{
+    display: unset;
+    transition: display .5s;
+}
+.accordion__list--button--active{
+    transform: rotate(180deg);
+      transition: transform 0.2s;
+    }
+/*  */
 hr{
     border: 1px solid var(--divider);
 }
