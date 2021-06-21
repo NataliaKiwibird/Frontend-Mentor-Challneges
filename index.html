@@ -12,11 +12,11 @@
 </head>
 <body>
   <div class="wrapper">
-    <main>
+    <main class="card">
 
       <picture class="illustration">
-        <source srcset="images/illustration-woman-online-desktop.svg" media="(min-width: 800px)">
-        <img src="images/illustration-woman-online-mobile.svg" class="illustration__img" alt="">
+        <source srcset="images/illustration-woman-online-desktop.svg" media="(min-width: 1100px)" class="illustration__img illustration__img-desktop">
+        <img src="images/illustration-woman-online-mobile.svg" class="illustration__img illustration__img-mobile" alt="woman working with a big screen computer">
       </picture>
 
       <section class="accordion">
@@ -26,40 +26,50 @@
 
         <ul class="accordion__list">
           <li>
-            <h3 class="accordion__list--question">How many team members can I invite?</h3>
-            <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            <div class="accordion__list--header">
+              <h3 class="accordion__list--question">How many team members can I invite?</h3>
+              <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            </div>
             <p class="accordion__list--answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
               team members for the Premium plan.</p>
             <hr>
           </li>
 
           <li>
-            <h3 class="accordion__list--question">What is the maximum file upload size?</h3>
-            <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            <div class="accordion__list--header">
+              <h3 class="accordion__list--question">What is the maximum file upload size?</h3>
+              <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            </div>
             <p class="accordion__list--answer">No more than 2GB. All files in your account must fit your allotted storage space.
             </p>
             <hr>
           </li>
 
           <li>
-            <h3 class="accordion__list--question">How do I reset my password?</h3>
-            <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            <div class="accordion__list--header">
+              <h3 class="accordion__list--question">How do I reset my password?</h3>
+              <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            </div>
             <p class="accordion__list--answer">Click “Forgot password” from the login page or “Change password” from your profile page.
               A reset link will be emailed to you.</p>
             <hr>
           </li>
 
           <li>
-            <h3 class="accordion__list--question">Can I cancel my subscription?</h3>
-            <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            <div class="accordion__list--header">
+              <h3 class="accordion__list--question">Can I cancel my subscription?</h3>
+              <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            </div>
             <p class="accordion__list--answer">Yes! Send us a message and we’ll process your request no questions asked.
             </p>
             <hr>
           </li>
 
           <li>
-            <h3 class="accordion__list--question">Do you provide additional support?</h3>
-            <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            <div class="accordion__list--header">
+              <h3 class="accordion__list--question">Do you provide additional support?</h3>
+              <button class="accordion__list--button"><img src="images/icon-arrow-down.svg" alt="red arrow down"></button>
+            </div>
             <p class="accordion__list--answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.
             </p>
             <hr>
