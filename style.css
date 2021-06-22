@@ -86,6 +86,10 @@ body{
     background-color: hsla(0, 36%, 70%, 0);
     margin-left: 1.5rem;
 }
+.info__form--input:focus{
+    outline: solid hsla(0, 36%, 70%, .5) 1px;
+    background-color: hsla(0, 36%, 70%, .25);
+}
 .info__form--input::placeholder{
     color: hsla(0, 36%, 70%, .4);
     font-family: 'Josefin Sans', sans-serif;
