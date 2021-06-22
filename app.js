@@ -9,7 +9,15 @@
 
     button.addEventListener("click", toggleClass);
     
-    menu.addEventListener("click", toggleClass);
+    answer.addEventListener("click", toggleClass);
     
     
 })();
+// plBtn.addEventListener('click', () => {
+//     polish.forEach(pl => {
+//         pl.style.display = "block";
+//     })
+//     english.forEach(eng => {
+//         eng.style.display = "none";
+//     })
+// });
