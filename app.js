@@ -1,23 +1,15 @@
-(() => {
     const button = document.querySelector(".accordion__list--button");
-    const answer = document.querySelector(".accordion__list--answer")
+    const answer = document.querySelector(".accordion__list--answer");
+    const ul = document.querySelector(".accordion__list");
+    const header = document.querySelector(".accordion__list--header");
+    const paragraph = document.querySelector(".accordion__list--paragraph");
+    const main = document.querySelector(".card");
 
-    const toggleClass = () => {
-        answer.classList.toggle("accordion__list--answer-active");
-        button.classList.toggle("accordion__list--button--active")
-    };
+    const toggleClass = (e) => {
+        e.target.closest('button').classList.toggle("accordion__list--button--active");
+        e.target.closest('button').parentElement.nextSibling.nextSibling.classList.toggle("accordion__list--answer-active");
+        };
 
-    button.addEventListener("click", toggleClass);
+
+    ul.addEventListener('click', toggleClass)    
     
-    answer.addEventListener("click", toggleClass);
-    
-    
-})();
-// plBtn.addEventListener('click', () => {
-//     polish.forEach(pl => {
-//         pl.style.display = "block";
-//     })
-//     english.forEach(eng => {
-//         eng.style.display = "none";
-//     })
-// });
