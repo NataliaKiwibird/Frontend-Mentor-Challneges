@@ -8,6 +8,7 @@
     const toggleClass = (e) => {
         e.target.closest('button').classList.toggle("accordion__list--button--active");
         e.target.closest('button').parentElement.nextSibling.nextSibling.classList.toggle("accordion__list--answer-active");
+
         };
 
 
