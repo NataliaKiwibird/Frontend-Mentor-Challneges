@@ -211,7 +211,7 @@ footer a{
       }
 
       .illustration__box-active{
-        animation: boxFloatX 1.5s;
+        animation: boxFloatX 1.5s infinite alternate;
       }
       .illustration__box:hover{
         animation: boxFloatX 1.5s;
@@ -223,8 +223,8 @@ footer a{
         padding: 0;
     }
     .illustration::after{
-        width: 58.5rem;
-        height: 57.5rem;
+        width: 58rem;
+        height: 56.75rem;
         background: url(images/bg-pattern-desktop.svg) no-repeat;
         background-size: cover;
         top: -10%;
