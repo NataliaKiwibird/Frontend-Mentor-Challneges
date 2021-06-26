@@ -236,6 +236,9 @@ footer a{
     margin: 0;
     padding: 3.5rem 7.5rem 7.5rem 7.5rem;
     }
+    .accordion__header--h2{
+        text-align: left;
+        }
     .accordion__list--question{
         font-size: 1.4rem;
     }
