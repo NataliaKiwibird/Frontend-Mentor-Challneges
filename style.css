@@ -98,6 +98,10 @@ font-size: 1.35rem;
 font-weight: 400;
 color: var(--text-grayish);
 }
+.accordion__list--question:hover{
+    color: var(--text-red);
+    cursor: pointer;
+}
 .accordion__list--button{
 cursor: pointer;
 background-color: white;
@@ -115,14 +119,20 @@ padding-right: 3rem;
 font-size: 1.2rem;
 line-height: 1.75;
 color: var(--text-grayish);
+margin: 0;
+max-height: 0;
 display: none;
-height: 0;
 }
 /* JS effects */
+.accordion__list--question-active{
+font-weight: bold;
+color: var(--text-blue);
+transition: color .2s;
+}
 .accordion__list--answer-active{
-    display: unset;
     height: 100%;
-    transition: height 1s;
+    display: unset;
+    transition: max-height 1s ease-in-out;
 }
 .accordion__list--button--active{
     transform: rotate(180deg);
@@ -158,7 +168,8 @@ footer a{
         max-width: 92.5rem;
         display: grid;
         grid-template-columns: 40rem 52.5rem;
-        margin:auto;
+        margin: auto;
+        margin-top: 18rem;
     }
     .illustration{
     position: unset;
@@ -177,9 +188,9 @@ footer a{
         top: 37.5%;
         left: -10%;
         z-index: 1;
-        animation: boxFloat 1.2s infinite alternate-reverse;
+        animation: boxFloatY 1.2s infinite alternate;
     }
-    @keyframes boxFloat {
+    @keyframes boxFloatY {
         from {
             top: 37.5%;
         }
@@ -187,9 +198,25 @@ footer a{
             top: 35%;
         }
       }
-    
-    .illustration__picture{
-    }
+
+      @keyframes boxFloatX {
+        from {
+            top: 35%;
+            left: -10%;
+        }
+        to {
+            top: 35%;
+            left: -15%;
+        }
+      }
+
+      .illustration__box-active{
+        animation: boxFloatX 1.5s;
+      }
+      .illustration__box:hover{
+        animation: boxFloatX 1.5s;
+
+      }
     .illustration__img{
         margin-top: 4rem;
         transform: translateX(-15%);
@@ -197,7 +224,7 @@ footer a{
     }
     .illustration::after{
         width: 58.5rem;
-        height: 56rem;
+        height: 57.5rem;
         background: url(images/bg-pattern-desktop.svg) no-repeat;
         background-size: cover;
         top: -10%;
@@ -205,9 +232,12 @@ footer a{
         z-index: -1;
     }
     .accordion{
-grid-column: 2/3;
-margin: 0;
-padding: 3.5rem 7.5rem 7.5rem 7.5rem;
+    grid-column: 2/3;
+    margin: 0;
+    padding: 3.5rem 7.5rem 7.5rem 7.5rem;
+    }
+    .accordion__list--question{
+        font-size: 1.4rem;
     }
     .accordion__list--header{
     }

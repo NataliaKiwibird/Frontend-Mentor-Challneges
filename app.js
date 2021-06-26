@@ -7,7 +7,6 @@
         e.target.closest('button').parentElement.nextSibling.nextSibling.classList.toggle("accordion__list--answer-active");
         e.target.closest('button').previousSibling.previousSibling.classList.toggle("accordion__list--question-active");
         box.classList.toggle("illustration__box-active");
-// console.log(box)    
 };
 
 
