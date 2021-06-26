@@ -95,7 +95,7 @@ list-style: none;
 }
 .accordion__list--question{
 font-size: 1.35rem;
-font-weight: 400;
+font-weight: bold;
 color: var(--text-grayish);
 }
 .accordion__list--question:hover{
@@ -125,7 +125,6 @@ display: none;
 }
 /* JS effects */
 .accordion__list--question-active{
-font-weight: bold;
 color: var(--text-blue);
 transition: color .2s;
 }
@@ -169,7 +168,7 @@ footer a{
         display: grid;
         grid-template-columns: 40rem 52.5rem;
         margin: auto;
-        margin-top: 18rem;
+        margin-top: 12.5rem;
     }
     .illustration{
     position: unset;
@@ -241,7 +240,5 @@ footer a{
         }
     .accordion__list--question{
         font-size: 1.4rem;
-    }
-    .accordion__list--header{
     }
 }
