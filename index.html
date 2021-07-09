@@ -4,21 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/services.css">
+  <link rel="stylesheet" type="text/css" href="css/testimonials.css">
+  <link rel="stylesheet" type="text/css" href="css/projects.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <div class="wrapper">
+    <main class="container">
+
+      <header class="header">
+        <picture class="logo"></picture>
+        <nav>
+          <ul>
+            About
+            Services
+            Projects
+            Contact
+          </ul>
+        </nav>
+      </header>
+
+      <section class="home"></section>
+      <section class="about"></section>
+
 
   We are creatives
 
@@ -35,15 +55,90 @@
 
   Learn more
 
-  Graphic design
+      <section class="services">
+        <div class="services__block">
+          <picture class="services__picture">
+            <source srcset="images/desktop/image-graphic-design.jpg" media="(min-width: 1049px)">
+            <img src="images/mobile/image-graphic-design.jpg" alt="Cherries on a green background" class="services__picture--img">
+          </picture>
+
+          <div class="services__text">
+            <div class="services__text--header">Graphic design</div>
+            <div class="services__text--paragraph">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</div>
+          </div>
+        </div>
+
+        <div class="services__block">
+          <picture class="services__picture">
+            <source srcset="images/desktop/image-photography.jpg" media="(min-width: 1049px)">
+            <img src="images/mobile/image-photography.jpg" alt="Orange on a blue background" class="services__picture--img">
+          </picture>
+
+          <div class="services__text">
+            <div class="services__text--header">Photography</div>
+            <div class="services__text--paragraph">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</div>
+          </div>
+        </div>
+        <!-- Graphic design
   Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
 
   Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+  Increase your credibility by getting the most stunning, high-quality photos that improve your business image. -->
+        </section>
 
-  Client testimonials
+      <section class="testimonials">
+        <h4 class="testimonials__header">Client testimonials</h4>
+        <ul class="testimonials__blocks">
+          <li>
+            <ul class="testimonials__block">
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+              <li class="testimonials__block--photo"><img src="images/image-emily.jpg" alt="profile picture"></li>
+              <li class="testimonials__block--paragraph">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+              </li>
+              <li class="testimonials__block--details">
+                <ul>
+                <li class="testimonials__block--details-name">Emily R.</li>
+                <li class="testimonials__block--details-job">Marketing Director</li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+          <li>
+            <ul class="testimonials__block">
+
+              <li class="testimonials__block--photo"><img src="images/image-thomas.jpg" alt="profile picture"></li>
+              <li class="testimonials__block--paragraph">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+              </li>
+              <li class="testimonials__block--details">
+                <ul>
+                <li class="testimonials__block--details-name">Thomas S.</li>
+                <li class="testimonials__block--details-job">Chief Operating Officer</li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+          <li>
+            <ul class="testimonials__block">
+
+              <li class="testimonials__block--photo"><img src="images/image-jennie.jpg" alt="profile picture"></li>
+              <li class="testimonials__block--paragraph">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+              </li>
+              <li class="testimonials__block--details">
+                <ul>
+                <li class="testimonials__block--details-name">Jennie F.</li>
+                <li class="testimonials__block--details-job">Business Owner</li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+          <!-- We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
   Emily R.
   Marketing Director
 
@@ -53,16 +148,54 @@
 
   Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
   Jennie F.
-  Business Owner
+  Business Owner -->
+      </section>
 
-  About
-  Services
-  Projects
-  Contact
+      <section class="projects">
+        <picture class="projects__picture">
+          <source srcset="images/desktop/image-gallery-milkbottles.jpg" media="(min-width: 1049px)">
+          <img src="images/mobile/image-gallery-milkbottles.jpg" alt="Milkbottles on a blue background" class="projects__picture--img">
+        </picture>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        <picture class="projects__picture">
+          <source srcset="images/desktop/image-gallery-orange.jpg" media="(min-width: 1049px)">
+          <img src="images/mobile/image-gallery-orange.jpg" alt="Orange on a plate on an orange background" class="projects__picture--img">
+        </picture>
+
+        <picture class="projects__picture">
+          <source srcset="images/desktop/image-gallery-cone.jpg" media="(min-width: 1049px)">
+          <img src="images/mobile/image-gallery-cone.jpg" alt="An ice cream cone on a blue background" class="projects__picture--img">
+        </picture>
+
+        <picture class="projects__picture">
+          <source srcset="images/desktop/image-gallery-sugarcubes.jpg" media="(min-width: 1049px)">
+          <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes on a pink background" class="projects__picture--img">
+        </picture>
+
+      </section>
+
+
+      <section class="footer">
+        <nav class="footer__nav">
+          <ul class="ooter__nav--items">
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+        </nav>
+        <ul class="footer__social-icons">
+          <li><img src="images/icon-facebook.svg" class="footer__social-icons--img" alt="facebook icon"></li>
+          <li><img src="images/icon-instagram.svg" class="footer__social-icons--img" alt="instagram icon"></li>
+          <li><img src="images/icon-twitter.svg" class="footer__social-icons--img" alt="twitter icon"></li>
+          <li><img src="images/icon-pinterest.svg" class="footer__social-icons--img" alt="pinterest icon"></li>
+        </ul>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/NataliaKiwibird">Natalia Bubiak</a>.
+        </div>
+      </section>
+
+    </main>
   </div>
 </body>
 </html>
