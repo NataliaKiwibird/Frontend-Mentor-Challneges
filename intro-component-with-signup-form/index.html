@@ -12,33 +12,28 @@
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <article>
+  <article class="wrapper">
       <h1>Intro component with sign up form</h1>
 
       <section class="paragraph">
-        <h2 class="">Learn to code by watching others</h2>
-        <p class="">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        <h2 class="paragraph-header">Learn to code by watching others</h2>
+        <p class="paragraph-text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
           but understanding how developers think is invaluable.
         </p>
       </section>
 
       <section class="form">
-        <h3>Try it free 7 days then $20/mo. thereafter</h3>
-        
-        <form action="" class="">
-          <input type="text" name="firstName" id="firstName" placeholder="First Name" class="">
-          <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="">
-          <input type="email" name="email" id="email" placeholder="Email Address" class="">
-          <input type="password" name="password" id="password" placeholder="Password" class="">
-          <button class="">Claim your free trial </button>
-          <p class="">By clicking the button, you are agreeing to our Terms and Services</p>
+        <h3 class="form-header"><span>Try it free 7 days</span> then $20/mo. thereafter</h3>
+
+        <form action="" class="signup">
+          <input type="text" name="firstName" id="firstName" placeholder="First Name" class="signup-input">
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="signup-input">
+          <input type="email" name="email" id="email" placeholder="Email Address" class="signup-input">
+          <input type="password" name="password" id="password" placeholder="Password" class="signup-input">
+          <button class="signup-input signup-button">Claim your free trial </button>
+          <p class="annotation">By clicking the button, you are agreeing to our Terms and Services</p>
         </form>
 
       </section>
